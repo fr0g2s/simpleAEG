@@ -11,14 +11,12 @@ class Logger:
     def __init__(self, log_dir='output'):
         if os.path.isfile(log_dir):
             raise ErrExistName()
-        
         self.log_dir = log_dir + '/'
         self.isExist = os.path.exists(self.log_dir)
 
     def logging(self, filename='tmp.log', result='tmp log'):
         if self.isExist == False:
             os.makedirs(self.log_dir, exist_ok=True)   # make parent dir
-
         with open(self.log_dir+filename, 'wb') as fp:    # result file must be bytes
             fp.write(result)
 

@@ -17,7 +17,7 @@ class Generator:
     def __init__(self, target_type='string'):
         self.rad = pyradamsa.Radamsa()
 
-    def get_data(self, seed_name=b'hello world', max_len=1024):
+    def get_data(self, seed_name=b'helloworld', max_len=None):
         '''
             include printable string, non-printable data, number
         '''
