@@ -1,5 +1,6 @@
 import inputgen
 import os
+import subprocess
 
 class Worker():
     def __init__(self, target_bin):
@@ -8,8 +9,9 @@ class Worker():
         
 
     def fuzzing(self):
-        # fuzzing data with random.data
-        pass
+        for i in range(0, 5, 1):
+            data = inputgen.get_data()
+            subprocess.Popen([self.target_bin, inputgen.get_data])
 
     def send_result(self):
         # send result to logger
