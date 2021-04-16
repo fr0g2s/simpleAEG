@@ -6,3 +6,7 @@ stdin에서 stack-based bof가 발생할 시, crash가 나는 입력값 찾는 �
 <br>
 아직은 crash만 발생하는 입력값임. 이걸 exploit으로 만들어야함.<br>
 crash가 발생하는 해당 입력값이 exploitable한지 검사를 어떻게 할까?<br>
+<br>
+<br>
+<h3>사용법</h3>
+$python find_vuln.py
