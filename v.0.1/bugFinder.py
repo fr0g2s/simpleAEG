@@ -35,7 +35,7 @@ class bugFinder:
         if isStripped is True:  # if stripped binary, use entry_state()
             self.state = self.proj.factory.entry_state(args=self.args, stdin=self.data)
         else:   # if we can use symbol info, use call_state(main)
-            self.state = self.proj.factory.call_state(self.main_addr, args=self.args, stdin=self.stdin_data)
+            self.state = self.proj.factory.call_state(self.main_addr, args=self.args, stdin=angr.SimFile('/dev/stdin',self.stdin_data))
 
         self.setConstraints()
 
