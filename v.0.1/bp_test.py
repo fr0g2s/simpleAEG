@@ -1,3 +1,6 @@
+# bp걸면 ipdb가 실행된다.
+# ipdb는 파이썬 코드 디버거다. angr 내부 코드를 보여준다.
+# 바이너리 런타임 정보를 보려면 bp 추가할 때, action 인자를 사용해서 디버깅 함수를 이용해야할 것 같다.
 import angr, claripy
 
 def debug_func(state):
