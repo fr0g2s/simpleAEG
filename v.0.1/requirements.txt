@@ -1,0 +1,5 @@
+z3-solver==4.8.10.0
+angr==9.0.6588
+ipdb==0.13.7
+ipython==7.22.0
+ipython-genutils==0.2.0
