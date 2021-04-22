@@ -2,7 +2,7 @@ stdin에서 stack-based bof가 발생할 시, crash가 나는 입력값 찾는 �
 
 
 ## 타겟
-arch: x86 ELF
+arch: x86 ~~AMD64~~ ELF
 mitigation: None
 section: stack
 
