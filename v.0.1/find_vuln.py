@@ -2,7 +2,7 @@ import angr
 import claripy
 import sys
 
-binName = "./sample"
+binName = "./sample_x86"
 input1 = claripy.BVS("input1", 8*0x100)
 
 proj = angr.Project(binName, load_options={"auto_load_libs":False})
