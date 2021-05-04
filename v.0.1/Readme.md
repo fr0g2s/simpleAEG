@@ -17,3 +17,9 @@ crash가 발생하는 해당 입력값이 exploitable한지 검사를 어떻게 
 ```
 $ python find_vuln.py
 ```
+
+## 구성 요소
+- bugFinder.py: 타겟 바이너리를 기호 실행을 통해 버그 탐색
+- exploitGen.py: bugFinder.py에서 찾은 버그로 익스플로잇 생성  
+- verifier.py: exploitGen.py에서 생성한 페이로드 검증  
+나머지는 테스트용 스크립트  
