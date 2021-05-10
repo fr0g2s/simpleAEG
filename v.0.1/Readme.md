@@ -19,6 +19,7 @@ $ python find_vuln.py
 ```
 
 ## 구성 요소
+- main.py: init -> bugFinder -> exploitGen -> verifier  
 - bugFinder.py: 타겟 바이너리를 기호 실행을 통해 버그 탐색
 - exploitGen.py: bugFinder.py에서 찾은 버그로 익스플로잇 생성  
 - verifier.py: exploitGen.py에서 생성한 페이로드 검증  

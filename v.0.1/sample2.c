@@ -11,9 +11,9 @@ void vuln(char *src){
 }
 
 int main(void){
-    char buf[0x100];
+    char buf[0x17];
 
-    scanf("%s", buf);
+    read(0, buf, 0x15);
     vuln(buf);
 
     return 0;
