@@ -1,4 +1,4 @@
-// rtl example
+// rop example
 #include <stdio.h>
 
 void vuln(){
