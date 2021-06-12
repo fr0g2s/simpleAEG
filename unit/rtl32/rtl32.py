@@ -1,6 +1,5 @@
 from pwn import *
 import setting
-import gadgets
 import angr, claripy
 import code
 
@@ -24,6 +23,5 @@ for ust in base.expst:
 	payload = bytes(payload)
 	with open('exp', 'wb') as f:
 		f.write(payload)
-	
-#code.interact(local=locals())
+	print('exp created')	
 
